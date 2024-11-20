@@ -1,0 +1,645 @@
+/* Added 2:20pm on Nov 20, 2024 */
+
+/* Learning Center CSS Edits */
+
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+body {
+    background-color: white !important;
+}
+a {
+    color: #1773eb;
+}
+html {
+    font-family: "Red Hat Display", sans-serif !important;
+}
+.container {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+nav {
+    padding-bottom: 0.5rem;
+}
+.hero {
+    margin-bottom: 1rem;
+}
+.hero img {
+    border-radius: 2rem !important;
+}
+.layout__content .hero {
+    margin-bottom: auto;
+}
+.widget__title, .widget__subtitle, .course__detail__header {
+    color: #55575B !important;
+}
+.widget__title, h1 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+#cart-button {
+    display: none;
+}
+.article-sidebar__icon {
+    display: none;
+}
+.widget--course-purchase .btn--secondary {
+    display: none;
+}
+/* removes excess horizontal padding on all widgets */
+.layout__content .widget {
+    padding: 1rem 0;
+}
+
+/* Header Global */
+.nav--global-links {
+    background-color: #8c2eea;
+}
+.nav--global-links>a {
+    color: #fff;
+}
+.top-bar {
+    border: none;
+}
+.header__inner .nav--top {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+.nav--top {
+    font-size: 16px;
+    border-radius: 4.8rem;
+    transition: .2s ease-out;
+    font-weight: 600;
+    white-space: nowrap;
+    border: 2px solid #2B2D31;
+    color: #2B2D31;
+}
+.nav--top ul a {
+    padding: 10px 20px 10px 20px;
+    text-transform: none;
+    font-size: 16px;
+    border-radius: 4.8rem;
+
+}
+.nav--top:hover {
+    border-color: #1770E5;
+    color: #1770E5;
+}
+.nav {
+    padding: 0px;
+}
+.btn--primary {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 10px 20px 10px 20px;
+    background-color: #2b2d31;
+    color: #ffffff;
+    border-radius: 4.8rem !important;
+    transition: .2s ease-out;
+    width: 100%;
+    border: none;
+}
+.btn--primary:hover {
+    background-color: #1770E5;
+    color: #ffffff;
+}
+
+/* End Header Global */
+
+/* Homepage Global */
+/* Below corrects default style that remove hero padding on home page */
+.home.course-group .home__content, .home.index .home__content, .home__content {
+    padding: 0 1rem !important;
+}
+/* End Homepage Global */
+
+/* Course Detail Global */
+.course__detail__asset {
+    margin-top: 2rem;
+}
+.course__detail__asset img {
+    width: 100%
+}
+.widget--course-social, .widget--course-social_standard {
+    display: none;
+}
+.course__detail__content {
+    padding: 0 !important;
+}
+.learner__container__toggle--small .btn {
+    display: none;
+}
+.expandable-sidebar__toggle {
+    margin-top: 1rem;
+}
+.learner__sidebar-inner-list .syllabus__lesson .syllabus__lesson--title {
+    font-weight: 400;
+}
+.learner__sidebar-list ul.syllabus__section-list .syllabus__lesson-container {
+    padding-left: 0;
+}
+/* Adjusting "Get started" button area of Course Detail Page */
+.layout__content--sidebar .ember-view.widget--course-purchase .panel {
+    background: none;
+    padding-top: 0;
+    margin-top: -0.5rem;
+}
+.layout__content--sidebar .ember-view.widget--course-purchase .panel .enroll__title span {
+    display: none;
+}
+.layout__content--sidebar .ember-view.widget--course-purchase .panel .btn.btn--primary {
+    width: 100%;
+    border-radius: 2px;
+    font-weight: bold;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+/* End Course Detail Global */
+
+/* Learning Paths Gloabl */
+/* Removing "Milestones" section */
+.learning-path .course__detail__container .collection__courses {
+    display: none;
+}
+/* End Learning Paths Gloabl */
+
+/* Course Page (Once you click "Start Course") */
+.learner__content .learner__container__toggle {
+    padding: 0 2rem;
+}
+.learner__content .bookmark-dropdown__button.bookmark-plus {
+    top: -3rem;
+}
+.course__detail__content ul {
+    list-style: disc;
+}
+.expandable-sidebar__content .syllabus__section-title-index {
+    display: none;
+}
+/* End Course Page */
+
+/* Catalog Page */
+.catalog-item {
+    background-color: #ffffff;
+    border: 2px solid #c4d1de;
+    border-radius: 16px;
+    height: auto;
+    text-align: left;
+    transition: .2s ease-out;
+}
+.catalog-item:hover {
+    border-color: #1770E5;
+}
+.catalog-grid-item {
+    border: none;
+    border-radius: 16px;
+}
+.catalog-grid-item__asset {
+    border-radius: 14px 14px 0px 0px !important;
+    object-fit: cover;
+    border-bottom: 2px solid #c4d1de;
+}
+.catalog-list-item__asset {
+    padding: 0;
+    border-radius: 16px;
+}
+.catalog-list-item__info, .catalog-list-item__description {
+    padding-left: 1rem;
+}
+.catalog-list-item__title {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+.catalog-list-item__cta-container {
+    border: none;
+}
+.catalog-list-item {
+    padding: 1rem;
+    padding-right: 0;
+}
+.ember-view.catalog-item {
+    margin: 1rem 0;
+}
+.catalog-list-item .catalog-list-item__title-container, .catalog-list-item .catalog-list-item__body {
+    padding-right: 1rem;
+}
+.catalog-list-item .catalog__ribbon--attached {
+   top: -2.25rem;
+   right: -1.2rem;
+}
+
+/* Contentful You Error Fixes */
+.featured-content-multi-carousel-item img {
+    padding: 0;
+}
+/* End Contentful You Error Fixes */
+/* End General Styles --- Everything above is at the Global level */
+
+
+/* Header Styles  */
+.new-info-banner {
+    padding: 1rem;
+    max-width: 100% !important;
+    background-color: #8c2eea;
+    text-align: center;
+}
+/* below will be removed after reverting header */
+.mobile-nav p {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 33px;
+    margin-right: 1.75rem;
+    position: relative;
+    text-transform: uppercase;
+}
+.toggle-topbar.menu-icon button span:after {
+    -webkit-box-shadow: 0 0 0 1px #333, 0 7px 0 1px #333, 0 14px 0 1px #333;
+    box-shadow: 0 0 0 1px #333, 0 7px 0 1px #333, 0 14px 0 1px #333;
+    content: "";
+    display: block;
+    height: 0;
+    margin-top: -8px;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    width: 16px;
+}
+/* maybe keep */
+@media only screen and (min-width: 48.063em) {
+    .mobile-nav {
+        display: none;
+    }
+    .top-bar {
+        display: block !important;
+    }
+    .header__inner .nav--top {
+        margin: 0;
+    }
+}
+
+/* Homepage Styles */
+.home.index .ember-view.header.header--microsite {
+    margin-top: 5rem;
+}
+
+
+/* Learning Path */
+.learning-path h3, .experts h3 {
+    font-weight: 600;
+    text-align: left;
+    color: #55575B !important;
+    font-size: 2rem;
+}
+.certifications-callout .widget__title .widget__subtitle {
+    color: #55575B !important;
+}
+.learning-path .learning-path-box, .certifications-callout .learning-path-box {
+    border-color: #c4d1de !important;
+    transition: .2s ease-out;
+}
+.certifications-callout .learning-path-box {
+    background: white;
+}
+.learning-path .learning-path-box:hover, .certifications-callout  learning-path-box:hover, .certifications-callout .learning-path-box:hover, .certifications-callout .learning-path-box:hover, .cert-callout .learning-path-box:hover {
+    border-color: #1770e5 !important;
+}
+.learning-path .learning-path-box:hover .arrow-link, .certifications-callout .learning-path-box:hover .arrow-link, .cert-callout .learning-path-box:hover .arrow-link {
+    background: #1770e5;
+}
+.learn-box-link p {
+    color: #333;
+}
+.certifications-callout {
+    background: #F1F2F6;
+}
+.certifications-callout {
+    padding: 4rem 3rem 5rem 3rem !important;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .arrow-wrapper {
+        position: absolute;
+        right: 2.5rem;
+        bottom: 2rem;
+    }
+}
+@media screen and (max-width: 1024px) {
+   .learning-path .row .columns, .certifications-callout .row .columns, .cert-callout .row .columns {
+       margin-bottom: 1rem;
+       min-height: fit-content;
+   }
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .learning-path .row .learning-path-box {
+        min-height: 54vh;
+    }
+}
+.learning-path-timeline-milestone__header {
+    background-color: #ffffff !important;
+}
+
+.learning-path-milestone-item__asset {
+    border-radius: 16px;
+    padding: 0px;
+    margin-right: 30px;
+}  
+
+.learning-path-milestone-item--secondary {
+    display: none;
+}
+
+.learning-path-milestone-item__info, .learning-path-milestone-item__description {
+    padding-left: 1em;
+}
+
+.learning-path-milestone-item__body {
+    border: none;
+}
+
+.learning-path-milestone-item__title {
+    padding: 10px 0 20px 0;
+}
+
+.learning-path-progress-bar-item--current .learning-path-progress-bar-item__index {
+    background: #1770E5 !important;
+}
+
+.catalog-aggregation--expanded {
+    border: none;
+}
+
+.catalog-aggregation {
+    border: none;
+}
+
+/* .panel {
+    padding: 0 !important;
+    margin-bottom: 16px !important;
+} */
+
+/* Contentful Experts */
+.experts .workshop-btn {
+    background-color: #1773eb;
+    border-color: #1773eb;
+    color: #fff;
+    margin-top: 2rem;
+    padding: 10px 15px;
+    border-radius: 12px;
+}
+.experts .workshop-btn a {
+    color: #fff !important;
+}
+.experts .workshop-btn:hover {
+    background-color: #468fef;
+    border-color: #468fef;
+}
+.experts .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.experts img {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.experts iframe {
+    border-radius: 16px;
+}
+.experts p {
+    max-width: 75%;
+}
+.experts .full-img {
+    max-width: 100%;
+}
+
+/* Course Detail Page */
+
+/* Course Page (Once you click "Start Course") */
+
+/* Live Training */
+
+/* Certifications */
+.cert-stats .stat {
+    font-size: 5rem;
+}
+.testimonial .testimonial-quote--left {
+    padding: 0 2em;
+}
+.testimonial .testimonial-quote__text {
+    font-size: 1.75rem;
+}
+.cert-testimonial .featured-content-multi-carousel {
+    border-radius: 4rem;
+}
+.cert-testimonial {
+    font-weight: 700;
+}
+.cert-testimonial .testimonial-quote__author-name, .cert-testimonial .testimonial-quote__author-description {
+    font-weight: 800;
+    font-style: normal;
+}
+.testimonial .testimonial-quote__author-name:before {
+    border: none;
+}
+.cert-faqs .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cert-faqs .faq-down-arrow {
+    background: #e6eff6;
+}
+.cert-faqs h6, .cert-faqs .faq-opened {
+    display: none;
+}
+.cert-faqs .faq-img {
+    max-height: 75vh;
+}
+.cert-callout .widget__title {
+    text-align: left;
+}
+.layout__content .widget.cert-testimonial {
+    padding: 2rem 4rem;
+}
+.cert-faqs a {
+    color: #1773eb;
+}
+.cert-testimonial img {
+    margin: 0 auto;
+    max-width: 100px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .cert-callout .learning-path-box {
+        min-height: 39vh;
+    }
+}
+.faq-title {
+    cursor: default;
+}
+
+/* LC Studio and Ninetailed */
+.resources-stats img {
+    height: 30vh;
+    border-radius: 16px;
+    object-fit: cover;
+    width: 100%;
+}
+.experts.video-section p, .experts.video-section h3 {
+    margin-left: 2rem;
+}
+ 
+
+/* Contact/Support */
+
+/* Styles pulled from contentful.com */
+
+/* ContentfulYOU CSS Edits */
+
+.eyebrow {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.featured-content-block-grid {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-content: flex-start;
+}
+
+.dashboard-hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 10vh;
+}
+
+.hero-heading {
+    font-size: 72px;
+    line-height: 76px;
+    font-weight: 700;
+    margin-bottom: 20px;    
+}
+
+.home-ribbon {
+    width: 50%;
+}
+
+.dashboard-learner-access img {
+    width: 0px;
+    height: 0px;
+    margin: 20px;
+}
+
+.catalog-grid-item__completed-container {
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border: none;
+}
+
+.catalog-grid-item__completed {
+    display: block;
+    margin: auto;
+}
+
+.catalog-grid-item__completed i {
+    background-color: #00C459 !important;
+    color: #ffffff !important;
+}
+
+.catalog-grid-item__completed p {
+    display: none;
+}
+
+.dashboard-carousel__asset-container {
+    padding-left: 30px;
+    padding-top: 30px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.featured-content-multi-carousel-item__title, .dashboard-carousel__title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #2B2D31;
+}
+
+.featured-content-multi-carousel-item__description, .dashboard-carousel__description {
+    font-size: 16px;
+    line-height: 26px;
+    position: relative;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+    max-height: 70px;
+    text-overflow: ellipsis;
+}
+
+.dashboard-additional-links {
+    background-color: #eff2f6;
+    padding: 60px;
+    border-radius: 16px;
+}
+
+/* ContentfulYOU Custom Pages */
+
+.hero-mini-catalog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin: 100px 0 100px 0;
+}
+
+.hero-catalog-buttons {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 10px 20px 10px 20px;
+    white-space: nowrap;
+    background-color: #2b2d31;
+    color: #ffffff !important;
+    border-radius: 4.8rem !important;
+    bottom: 30px;
+    transition: .2s ease-out;
+    margin: 30px 15px 30px 15px !important;
+
+}
+
+.hero-catalog-buttons:hover {
+    background-color: #1770E5;
+}
+
+.carousel-mini-catalog {
+    background-color: #ffffff;
+    padding: 0 10% 100px 10%;
+}
+
+.carousel-mini-catalog img {
+    object-fit: cover;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    padding: 0px !important;
+}
+
+.featured-content-multi-carousel-item {
+    background-color: #ffffff;
+    border-radius: 16px;
+    height: auto;
+    min-height: 400px;
+    text-align: left;
+    transition: .2s ease-out;
+}
