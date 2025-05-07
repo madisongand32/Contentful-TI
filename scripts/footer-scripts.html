@@ -1,0 +1,51 @@
+<!-- Find in TI Through: Settings -> Tracking Scripts -> Footer Scripts -->
+<!-- Copy Below Me -->
+
+<!--Custom Login BUTTONS -->
+<script>
+  // Select the form with the specific action
+  const form = $("form[action='/learn/sign_in']");
+
+  // Check if the form contains an <h2> element
+  if (form.find("h2").length === 0) {
+    // If no <h2> element exists, add it to the form
+    form.find(".text-centered").append("<h2>Sign In Details</h2>");
+  }
+
+  // Add the new elements before the existing <h2> or the newly added one
+  form.find("h2").before(`
+    <div class="flex flex-col gap-3 custom-sso my-6">
+      <div class="contentful-sso">
+        <a class="contentful-login-link text-semibold" href="https://be.contentful.com/integrations/learning_center">
+          <div class="flex items-center justify-center gap-3">
+            <img class="h-5 w-5" src="https://images.ctfassets.net/t1gkr4r4xlcw/3rKlI5NbO4F6yXYBNyhGfz/40bad9556ef3714eed806c954e558ef9/Contentful_C_Logo_2.5_Dark.png?w=24"/>
+            <p>Log in with Contentful</p>
+          </div>
+        </a>
+      </div>
+      <div class="partner-sso"><a class="partner-login-link text-semibold" href="https://contentful.allbound.com/?sso=24">Log in with Partner Portal</a></div>
+    </div>
+    <p class="text-xs text-center mb-4">For EU data residency users, <a style="color: #767676;" class="underline" href="https://be.eu.contentful.com/integrations/learning_center">click here to log in</a>.</p>
+    <div style="color: #767676;" class="my-5 flex justify-center items-center gap-3">
+      <div style="background: #767676; height: 1px;" class="w-10"/>
+      <p class="text-xs">or log in with your account</p>
+      <div style="background: #767676; height: 1px;" class="w-10"/>
+    </div>
+  `);
+
+  $("span.session__forgot").before(`
+    <p class="text-xs text-center mt-20">Don't have an account? <a style="color: #767676;" class="underline" href="/register">Sign up here</a>.</p>
+  `);
+</script>
+
+<script>
+  $(document).on("click", ".mobile-nav", function () {
+    console.log("Menu icon clicked");
+    $(".ember-view.top-bar").toggleClass("expanded");
+    $(".ember-view.top-bar").toggleClass("hidden");
+  });
+  $(document).on("click", ".faq-title", function () {
+    let nextElement = $(this).next(); // Select the immediate next sibling element
+    nextElement.slideToggle(); // Toggle visibility with animation
+  });
+</script>
