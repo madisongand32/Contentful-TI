@@ -43,6 +43,14 @@ h1 {
 .article-sidebar__icon {
   display: none;
 }
+/* hide star rating sidebar for articles */
+.article-sidebar__rating {
+  display: none;
+}
+/* hide star rating siderbar for content */
+.sidebar__testimonial__rating {
+  display: none;
+}
 .widget--course-purchase .btn--secondary {
   display: none;
 }
